@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title>Ourcinema</title>
   </head>
@@ -237,42 +240,86 @@
       </div>
     </main>
     <footer>
-      <div>
-        <p>GET IN TOUCH</p>
+      <div style="line-height: 1.6">
+        <p style="font-size: 40px">GET IN TOUCH</p>
         <label for="">Name</label> <br />
-        <input type="text" /> <br />
+        <input type="text" style="width: 20rem; height: 2.3rem" /> <br />
         <label for="">Email</label> <br />
-        <input type="email" /> <br />
+        <input type="email" style="width: 20rem; height: 2.3rem" /> <br />
         <label for="">Subject</label> <br />
-        <input type="text" /> <br />
+        <input type="text" style="width: 20rem; height: 2.3rem" /> <br />
         <label for="">Message</label> <br />
-        <input type="text" /> <br />
-        <input type="submit" />
+        <input type="text" style="width: 20rem; height: 14rem" /> <br />
+        <br />
+        <input
+          type="submit"
+          style="
+            width: 7rem;
+            height: 3rem;
+            font-weight: 500;
+            font-size: medium;
+            cursor: pointer;
+          "
+        />
       </div>
-      <div class="vertical"></div>
-      <div>
+      <div style="border-left: 2px solid white; height: 500px"></div>
+      <div style="font-size: 28px; text-align: right">
         <div>
           <p>CONTACT US</p>
           <p>EMAIL - abc@gmail.com</p>
           <p>PHONE - 700000000</p>
         </div>
+        <br /><br />
         <div>
           <p>CONTACT WITH US</p>
           <div>icons</div>
+          <br /><br />
         </div>
         <div>
           <div>
-            <a href="./index.html">HOME | </a>
-            <a href="./notice-board.html">NOTICE BOARD | </a>
-            <a href="./in-the-news.html">IN THE NEWS </a>
+            <a href="./index.html" style="text-decoration: none; color: white"
+              >HOME &nbsp;|&nbsp;
+            </a>
+            <a
+              href="./notice-board.html"
+              style="text-decoration: none; color: white"
+              >NOTICE BOARD &nbsp;|&nbsp;
+            </a>
+            <a
+              href="./in-the-news.html"
+              style="text-decoration: none; color: white"
+              >IN THE NEWS
+            </a>
           </div>
           <div>
-            <a href="./publications.html">PUBLICATIONS | </a>
-            <a href="./support-us.html">SUPPORT US | </a>
-            <a href="./location.html">LOCATION</a>
+            <a
+              href="./publications.html"
+              style="text-decoration: none; color: white"
+              >PUBLICATIONS &nbsp;|&nbsp;
+            </a>
+            <a
+              href="./support-us.html"
+              style="text-decoration: none; color: white"
+              >SUPPORT US &nbsp;|&nbsp;
+            </a>
+            <a
+              href="./location.html"
+              style="text-decoration: none; color: white"
+              >LOCATION</a
+            >
           </div>
         </div>
       </div>
     </footer>
+    <p class="copyright">© Copyright - Kolkata People’s Film Festival</p>
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="./Assets/JS/script.js"></script>
   </body>
 </html>
