@@ -311,6 +311,7 @@
   padding-right: 10%;
   padding-left: 10%;
   padding-top: 8%;
+  margin-bottom: 8%;
 }
 
 .main-img {
@@ -327,4 +328,18 @@
   background-color: #9AAFA8;
   padding: 3.5rem;
   padding-top: 12%;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10%;
+}
+
+.vertical {
+  border-left: 3px solid white;
+  height: 200px;
 }
