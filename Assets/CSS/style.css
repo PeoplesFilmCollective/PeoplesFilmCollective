@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Navbar */
@@ -13,9 +17,8 @@
 }
 
 .container {
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .navbar {
@@ -437,8 +440,8 @@ footer {
 }
 
 .img-inthenews {
-  width: 500px;
-  height: 300px;
+  width: 31.25rem;
+  height: 18.75rem;
 }
 
 @media (max-width: 768px) {
