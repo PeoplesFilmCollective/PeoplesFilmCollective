@@ -244,3 +244,15 @@
   justify-content: center;
   margin-bottom: 3%;
 }
+
+.fof-films {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
+}
