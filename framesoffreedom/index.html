@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title>FRAMES OF FREEDOM</title>
   </head>
@@ -26,27 +27,22 @@
         <h1 class="logo">Ourcinema</h1>
       </div>
     </nav>
+    <br><br><br><br>
     <main>
-      <div class="img-silder-main">
-        <div class="slider">
-          <img
-            id="img-1"
-            src="https://images.bannerbear.com/direct/EjJywNMlJm5zmerB8a/requests/000/033/000/213/0Mn5r3E1XY0gmWDZQWPoD9kg7/9e42168a169264bb575a5ec10acd1c8942967845.jpg"
-            alt="Image 1"
-          />
-          <img id="img-2" src="./Assets/images/stock2.jpg" alt="Image 2" />
-          <img
-            id="img-3"
-            src="https://images.bannerbear.com/direct/EjJywNMlJm5zmerB8a/requests/000/033/000/213/0Mn5r3E1XY0gmWDZQWPoD9kg7/9e42168a169264bb575a5ec10acd1c8942967845.jpg"
-            alt="Image 3"
-          />
+      <section class="container-img-slider">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img class="nature" id="slide-1" src="https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" />
+            <img class="nature" id="slide-2" src="https://images.unsplash.com/photo-1657586640569-4a3d4577328c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" />
+            <img class="nature" id="slide-3" src="https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
         </div>
-        <div class="navigation-button">
-          <span class="dot active" onclick="changeSlide(0)"></span>
-          <span class="dot" onclick="changeSlide(1)"></span>
-          <span class="dot" onclick="changeSlide(2)"></span>
-        </div>
-      </div>
+      </section>
       <div class="year-about">
         <p style="font-size: xx-large; text-align: center">
           5th FRAMES OF FREEDOM
@@ -145,6 +141,9 @@
         </div>
       </div>
     </main>
+    <script>
+      w3.slideshow(".nature", 3000);
+    </script>
     <script src="./Assets/JS/script.js"></script>
   </body>
 </html>
