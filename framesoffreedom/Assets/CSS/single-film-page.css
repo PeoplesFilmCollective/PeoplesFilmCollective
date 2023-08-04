@@ -179,3 +179,11 @@
   }
 }
 
+/* Main */
+main {
+  text-align: center;
+}
+
+span {
+  color: red;
+}
