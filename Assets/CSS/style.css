@@ -270,8 +270,8 @@ footer {
   flex-direction: row;
 }
 
-.sub-container-card-text {
-  background-color: #9aafa8;
+.sub-container-card-text-kpff {
+  background-color: #9AAFA8;
   padding: 3.5rem;
   padding-top: 12%;
 }
@@ -307,7 +307,7 @@ footer {
     flex-direction: column;
   }
 
-  .sub-container-card-text {
+  .sub-container-card-text-kpff {
     background-color: #9aafa8;
     padding: 3.5rem;
     padding-top: 12%;
@@ -344,7 +344,7 @@ footer {
   flex-direction: row;
 }
 
-.sub-container-card-text {
+.sub-container-card-text-lc {
   background-color: #a8a78b;
   padding: 3.5rem;
   padding-top: 12%;
@@ -362,6 +362,12 @@ footer {
 .main-container-card {
   display: flex;
   flex-direction: row;
+}
+
+.sub-container-card-text {
+  background-color: #9AAFA8;
+  padding: 3.5rem;
+  padding-top: 12%;
 }
 
 /* Stories */
