@@ -1,30 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title>KOLKATA PEOPLE'S FILM FESTIVAL</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-container container">
-          <input type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-            <li><a href="./index.html" style="color: red;">HOME</a></li>
-            <li><a href="">FILMS</a></li>
-            <li><a href="./blog.html">BLOGS</a></li>
-            <li><a href="./gallery.html">GALLERY</a></li>
-            <li><a href="./schedule.html">SCHEDULE</a></li>
-            <li><a href="">SUBMIT</a></li>
-          </ul>
-          <h1 class="logo">Ourcinema</h1>
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
         </div>
-      </nav>
-</body>
+        <ul class="menu-items">
+          <li><a href="./index.html" style="color: red">HOME</a></li>
+          <li><a href="">FILMS</a></li>
+          <li><a href="./blog.html">BLOGS</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./schedule.html">SCHEDULE</a></li>
+          <li><a href="">SUBMIT</a></li>
+        </ul>
+        <h1 class="logo">Ourcinema</h1>
+      </div>
+    </nav>
+    <main>
+      <div class="img-silder-main">
+        <div class="slider">
+          <img
+            id="img-1"
+            src="https://images.bannerbear.com/direct/EjJywNMlJm5zmerB8a/requests/000/033/000/213/0Mn5r3E1XY0gmWDZQWPoD9kg7/9e42168a169264bb575a5ec10acd1c8942967845.jpg"
+            alt="Image 1"
+          />
+          <img id="img-2" src="./Assets/images/stock2.jpg" alt="Image 2" />
+          <img
+            id="img-3"
+            src="https://images.bannerbear.com/direct/EjJywNMlJm5zmerB8a/requests/000/033/000/213/0Mn5r3E1XY0gmWDZQWPoD9kg7/9e42168a169264bb575a5ec10acd1c8942967845.jpg"
+            alt="Image 3"
+          />
+        </div>
+        <div class="navigation-button">
+          <span class="dot active" onclick="changeSlide(0)"></span>
+          <span class="dot" onclick="changeSlide(1)"></span>
+          <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+      </div>
+      <div class="year-about">
+        <p style="font-size: xx-large; text-align: center">
+          5th FRAMES OF FREEDOM
+        </p>
+        <br />
+        <div class="fof-sub-texts">
+          <p>
+            The Kolkata People’s Film Festival (KPFF), organised by the People's
+            Film Collective (PFC), is a people-supported, independent,
+            volunteer-led cinema festival, showcasing politically committed
+            contemporary documentary and fiction cinema from India and
+            Southasia. It brings together a wide cross-section of audience and
+            filmmakers to interact and form friendships and active camaraderie
+            over films and conversations.
+          </p>
+          <br />
+          <p>
+            The ninth edition of KPFF will screen 39 films featuring a wide
+            range of compelling stories from India and the subcontinent. It is
+            the worst of times as the Fascist regime in India mounts an
+            unrelenting assault on the working class and religious minorities.
+            As people of entire regions are coerced into silence, entire
+            communities are othered and millions of Bengali-speaking people in
+            Assam have their citizenship hanging from a thread. It is a time of
+            censorship of political art, literature and cinema and erasure of
+            history by the Fascist regime. It is a time when human rights
+            activists and journalists across the country are being punished for
+            siding with the people by long periods of incarceration without
+            trial. It is also the best of times, as oppressed people fight back
+            against state violence. As filmmakers take to the streets to make
+            cinema on our wounded times.
+          </p>
+          <br />
+          <p>
+            The KPFF 2023 features 9 films that tell stories from the Southasian
+            regions of Afghanistan, Bangladesh, Myanmar, Nepal, Pakistan, Sri
+            Lanka and the Southasian diaspora in British Columbia. Common
+            threads of migration, migrant worker lives, organising for dignity
+            and survival, ordinary people's resilience, resistance and
+            solidarity in times of strife, conflict and despair bind these
+            stories together with those from India.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="year">
+          <a href="" style="text-decoration: none; color: red;"><p style="font-size: 20px;">2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</p></a>
+          <a href="" style="text-decoration: none;"><p style="font-size: 20px;">2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</p></a>
+          <a href="" style="text-decoration: none;"><p style="font-size: 20px;">2019 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</p></a>
+          <a href="" style="text-decoration: none;"><p style="font-size: 20px;">2018 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</p></a>
+          <a href="" style="text-decoration: none;"><p style="font-size: 20px;">2017 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</p></a>
+        </div>
+      </div>
+      <div class="fof-films">
+        
+      </div>
+    </main>
+    <script src="./Assets/JS/script.js"></script>
+  </body>
 </html>
