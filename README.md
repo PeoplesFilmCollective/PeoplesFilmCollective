@@ -1,2 +1,2 @@
-# PFC Website
+## People's Film Collective (PFC)
 
