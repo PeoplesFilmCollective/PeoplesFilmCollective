@@ -194,7 +194,7 @@ footer {
     padding: 10%;
     gap: 12%;
   }
-  
+
   .line {
     display: none;
   }
@@ -250,10 +250,6 @@ footer {
   }
 }
 
-/* .top-card-text {
-
-} */
-
 /* KPFF */
 .kpff {
   background-color: #3c6771;
@@ -280,6 +276,17 @@ footer {
   padding-top: 12%;
 }
 
+.card-text-banner-header {
+  font-size: 260%;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+.card-text-banner {
+  padding-top: 6%;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
   .kpff {
     background-color: #3c6771;
@@ -289,17 +296,17 @@ footer {
     padding-left: 10%;
     padding-top: 8%;
   }
-  
+
   .main-img {
     height: 700px;
     width: 550px;
   }
-  
+
   .main-container-card {
     display: flex;
     flex-direction: column;
   }
-  
+
   .sub-container-card-text {
     background-color: #9aafa8;
     padding: 3.5rem;
@@ -317,20 +324,9 @@ footer {
   padding-top: 8%;
 }
 
-.main-img {
-  height: 700px;
-  width: 550px;
-}
-
 .main-container-card {
   display: flex;
   flex-direction: row;
-}
-
-.sub-container-card-text {
-  background-color: #9aafa8;
-  padding: 3.5rem;
-  padding-top: 12%;
 }
 
 /* Little Cinema */
@@ -341,11 +337,6 @@ footer {
   padding-right: 10%;
   padding-left: 10%;
   padding-top: 8%;
-}
-
-.main-img {
-  height: 700px;
-  width: 550px;
 }
 
 .main-container-card {
@@ -368,20 +359,9 @@ footer {
   padding-top: 8%;
 }
 
-.main-img {
-  height: 700px;
-  width: 550px;
-}
-
 .main-container-card {
   display: flex;
   flex-direction: row;
-}
-
-.sub-container-card-text {
-  background-color: #9aafa8;
-  padding: 3.5rem;
-  padding-top: 12%;
 }
 
 /* Stories */
@@ -395,20 +375,9 @@ footer {
   margin-bottom: 8%;
 }
 
-.main-img {
-  height: 700px;
-  width: 550px;
-}
-
 .main-container-card {
   display: flex;
   flex-direction: row;
-}
-
-.sub-container-card-text {
-  background-color: #9aafa8;
-  padding: 3.5rem;
-  padding-top: 12%;
 }
 
 /* Back to top button */
@@ -420,4 +389,32 @@ footer {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+}
+
+/* Location */
+.main-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 6%;
+  background-color: #ececf1;
+  gap: 5%;
+}
+
+@media (max-width: 768px) {
+  .main-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #ececf1;
+    gap: 5%;
+  }
+
+  .map {
+    height: 200px;
+    width: 100%;
+  }
 }

@@ -1,35 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title>Location</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-container container">
-          <input type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-            <li><a href="#">HOME</a></li>
-            <li><a href="./notice-board.html">NOTICE BOARD</a></li>
-            <li><a href="./in-the-news.html">IN THE NEWS</a></li>
-            <li><a href="./publications.html">PUBLICATIONS</a></li>
-            <li><a href="./support-us.html">SUPPORT US</a></li>
-          </ul>
-          <h1 class="logo">Ourcinema</h1>
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
         </div>
-      </nav>
-      <main>
-
-      </main>
-      <footer>
-        
-      </footer>
-</body>
+        <ul class="menu-items">
+          <li><a href="#">HOME</a></li>
+          <li><a href="./notice-board.html">NOTICE BOARD</a></li>
+          <li><a href="./in-the-news.html">IN THE NEWS</a></li>
+          <li><a href="./publications.html">PUBLICATIONS</a></li>
+          <li><a href="./support-us.html">SUPPORT US</a></li>
+        </ul>
+        <h1 class="logo">Ourcinema</h1>
+      </div>
+    </nav>
+    <main>
+      <div class="main-location">
+        <div>
+          <div>
+            <p style="font-size: 40px">GET IN TOUCH</p>
+            <div style="line-height: 2">
+              <label for="">NAME</label> <br />
+              <input
+                type="text"
+                style="width: 22rem; height: 2.3rem; font-size: medium"
+              />
+              <br />
+              <label for="">EMAIL</label> <br />
+              <input
+                type="email"
+                style="width: 22rem; height: 2.3rem; font-size: medium"
+              />
+              <br />
+              <label for="">SUBJECT</label> <br />
+              <input
+                type="text"
+                style="width: 22rem; height: 2.3rem; font-size: medium"
+              />
+              <br />
+              <label for="">MESSAGE</label> <br />
+              <textarea
+                rows="15"
+                cols="38"
+                style="font-size: large;"
+              >
+                Test
+                </textarea
+              >
+              <br />
+              <br />
+              <input
+                type="submit"
+                style="
+                  width: 7rem;
+                  height: 3rem;
+                  font-weight: 500;
+                  font-size: medium;
+                  cursor: pointer;
+                  background-color: black;
+                  color: white;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p style="font-size: 40px; padding-bottom: 8%">FESTIVAL LOCATION</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14742.064866442734!2d88.3487472!3d22.5223274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027731576b6be7%3A0x96a67c9579d27e65!2sMahanayak%20Uttam%20Manch!5e0!3m2!1sen!2sin!4v1691133754500!5m2!1sen!2sin"
+            width="500"
+            height="450"
+            class="map"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
