@@ -197,7 +197,7 @@ footer {
 }
 
 .footer-subtext {
-  font-size: 25px; 
+  font-size: 25px;
   text-align: right;
 }
 
@@ -217,10 +217,9 @@ footer {
 
   .footer-subtext {
     margin-top: 5%;
-    font-size: 28px; 
+    font-size: 28px;
     text-align: left;
   }
-  
 }
 
 .copyright {
