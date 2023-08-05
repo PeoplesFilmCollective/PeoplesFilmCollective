@@ -28,6 +28,7 @@
   background: #fff;
   color: #000;
   z-index: 100;
+  opacity: 0.95;
 }
 
 .navbar-container {
@@ -50,7 +51,7 @@
 .menu-items li {
   list-style: none;
   margin-left: 1.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .navbar a {
@@ -196,7 +197,7 @@ footer {
 }
 
 .footer-subtext {
-  font-size: 28px; 
+  font-size: 25px; 
   text-align: right;
 }
 
@@ -233,7 +234,7 @@ footer {
 
 /* Main Section */
 .top-card-container {
-  padding-top: 8%;
+  padding-top: 9%;
   padding-bottom: 2%;
   display: flex;
   justify-content: center;
