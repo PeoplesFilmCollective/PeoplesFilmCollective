@@ -17,13 +17,12 @@
 }
 
 .container {
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .navbar {
-  box-shadow: 0px 5px 10px 0px #aaa;
+  box-shadow: 0px 3px 5px 0px #aaa;
   position: fixed;
   width: 100%;
   background: #fff;
@@ -34,7 +33,7 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  height: 100px;
   align-items: center;
 }
 
@@ -68,6 +67,12 @@
 @media (max-width: 768px) {
   .navbar {
     opacity: 0.95;
+    position: static;
+  }
+
+  .container {
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   .navbar-container input[type="checkbox"],
@@ -78,7 +83,7 @@
   .navbar-container {
     display: block;
     position: relative;
-    height: 64px;
+    height: 110px;
   }
 
   .navbar-container input[type="checkbox"] {
@@ -98,7 +103,7 @@
     height: 28px;
     width: 35px;
     position: absolute;
-    top: 20px;
+    margin-top: 40px;
     left: 20px;
     z-index: 2;
     display: flex;
@@ -132,7 +137,8 @@
     padding-top: 100px;
     background: #fff;
     height: 100vh;
-    max-width: 300px;
+    position: fixed;
+    width: 300px;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
@@ -179,9 +185,61 @@
   }
 }
 
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10%;
+  gap: 12%;
+}
+
+.footer-subtext {
+  font-size: 28px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  footer {
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    gap: 12%;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .footer-subtext {
+    margin-top: 5%;
+    font-size: 28px;
+    text-align: left;
+  }
+}
+
+.copyright {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
+  font-size: large;
+}
+
 /* Main */
 main {
   text-align: center;
+  padding-top: 7%;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 10%;
+  }
 }
 
 span {
