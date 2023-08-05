@@ -23,11 +23,11 @@
 
 .navbar {
   box-shadow: 0px 3px 5px 0px #aaa;
-  position: fixed;
+  position: relative;
   width: 100%;
   background: #fff;
   color: #000;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -35,6 +35,7 @@
   justify-content: space-between;
   height: 100px;
   align-items: center;
+  z-index: 2000;
 }
 
 .menu-items {
@@ -67,7 +68,8 @@
 @media (max-width: 768px) {
   .navbar {
     opacity: 0.95;
-    position: static;
+    position: relative;
+    z-index: 1000;
   }
 
   .container {
@@ -193,6 +195,7 @@ footer {
   flex-direction: row;
   padding: 10%;
   gap: 12%;
+  z-index: 500;
 }
 
 .footer-subtext {
@@ -208,6 +211,8 @@ footer {
     flex-direction: column;
     padding: 10%;
     gap: 12%;
+    z-index: 0;
+    position: relative;
   }
 
   .line {
@@ -234,6 +239,7 @@ footer {
 main {
   text-align: center;
   padding-top: 7%;
+  z-index: -100;
 }
 
 @media (max-width: 768px) {
