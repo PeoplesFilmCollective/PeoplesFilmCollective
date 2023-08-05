@@ -350,6 +350,22 @@ footer {
   border-radius: 15px;
 }
 
+.submit-button {
+  width: 8rem;
+  height: 3rem;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: rgb(196, 194, 194);
+  color: black;
+}
+
 @media (max-width: 768px) {
   .main-location {
     display: flex;

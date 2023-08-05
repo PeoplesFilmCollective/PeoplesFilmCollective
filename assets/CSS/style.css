@@ -207,7 +207,7 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    padding: 8%;
     gap: 12%;
   }
 
@@ -566,6 +566,22 @@ footer {
   padding-bottom: 6%;
   background-color: #ececf1;
   gap: 5%;
+}
+
+.submit-button {
+  width: 8rem;
+  height: 3rem;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: rgb(196, 194, 194);
+  color: black;
 }
 
 @media (max-width: 768px) {
