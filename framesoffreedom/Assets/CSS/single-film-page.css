@@ -10,6 +10,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Navbar */
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
