@@ -320,7 +320,7 @@ footer {
 @media (max-width: 768px) {
   .kpff {
     background-color: #3c6771;
-    width: 100%;
+      width: 100%;
     height: 1380px;
     padding-right: 10%;
     padding-left: 10%;
@@ -335,18 +335,20 @@ footer {
 
   .main-img {
     height: 440px !important;
-    width: 330px !important;
+    width: 100% !important;
   }
 
   .main-container-card {
     flex-direction: column !important;
+    
   }
 
   .sub-container-card-text-kpff {
     background-color: #9aafa8;
     padding: 1.2rem;
     padding-top: 12%;
-    height: 9%;
+    /* height: 9%; */
+    overflow: scroll;
   }
 }
 
