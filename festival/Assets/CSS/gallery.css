@@ -31,13 +31,14 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  height: 100%;
   align-items: center;
 }
 
 .menu-items {
   order: 2;
   display: flex;
+  width: 50vw;
 }
 
 .logo {
