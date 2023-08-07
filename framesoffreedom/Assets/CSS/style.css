@@ -340,7 +340,7 @@ input[type="text"] {
 }
 
 .fof-sub-texts {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .year {
@@ -382,6 +382,11 @@ input[type="text"] {
   .fof-sub-texts {
     margin-top: 3%;
     font-size: 16px;
+  }
+
+  .text-spacing {
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   .pipe {
@@ -474,7 +479,8 @@ input[type="text"] {
     justify-content: center;
     padding: 5%;
     background-color: #ececf1;
-    gap: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .map {
