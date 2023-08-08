@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@font-face {
+  font-family: 'Fork Awesome';
+  src: url('../../../assets/fa/fonts/forkawesome-webfont.woff2') format('woff2');
+}
 
 *,
 *::after,
@@ -8,7 +12,17 @@
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
+  font-family: "Fork Awesome", sans-serif !important;
 }
+
+i {
+  font-family: 'Fork Awesome'!important;
+}
+
+/* .fa { */
+/*   font-family: unset; */
+/*   font-family: "Fork Awesome", sans-serif !important; */
+/* } */
 
 body {
   overflow-x: hidden;
@@ -346,7 +360,7 @@ span {
   align-items: center;
   justify-content: center;
   max-width: 1200px;
-  position: relative;
+  position: relative; 
 }
 .wrapper i {
   top: 50%;
@@ -371,7 +385,7 @@ span {
 }
 .wrapper i:first-child {
   left: -22px;
-  display: none;
+  /* display: none; */
 }
 .wrapper i:last-child {
   right: -22px;
@@ -400,6 +414,7 @@ span {
 .carousel img:first-child {
   margin-left: 0px;
 }
+
 
 @media screen and (max-width: 900px) {
   .carousel img {
