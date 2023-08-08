@@ -96,6 +96,7 @@ body {
   .container {
     margin-left: 0%;
     margin-right: 0%;
+    height: 100vh;
   }
 
   .navbar-container input[type="checkbox"],
