@@ -38,6 +38,11 @@
   font-size: 50px;
 }
 
+
+.blog-sub-heading {
+  font-weight: 500;
+}
+
 .content-text {
   padding-top: 2%;
   padding-bottom: 2%;
