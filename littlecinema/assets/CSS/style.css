@@ -363,3 +363,35 @@ input[type="text"] {
     display: none;
   }
 }
+
+
+/* Pagination */
+.center {
+  text-align: center;
+  font-family: monospace;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: #000000;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .5s;
+  border: 1px solid #DDD;
+  margin: 0 4px;
+  font-size: 20px;
+}
+
+.pagination a.active {
+  background-color: red;
+  color: #FFFFFF;
+  border: 1px solid red;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #DDD;
+}
