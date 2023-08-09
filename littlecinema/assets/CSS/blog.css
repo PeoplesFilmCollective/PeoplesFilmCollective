@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #F3F3F3;
+    padding: 5%;
+}
+
+img {
+    height: 500px;
+    width: 1345px;
+}
+
+.blog-heading {
+    font-weight: 700;
+    font-size: 64px;
+}
