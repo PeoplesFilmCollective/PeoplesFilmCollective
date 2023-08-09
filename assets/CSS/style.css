@@ -624,8 +624,8 @@ footer {
 }
 
 .img-inthenews {
-  width: 31.25rem;
-  height: 18.75rem;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -639,8 +639,8 @@ footer {
   }
 
   .img-inthenews {
-    width: 330px;
-    height: 200px;
+    width: 100%;
+    height: auto;
   }
 
   .main-container-inthenews {
