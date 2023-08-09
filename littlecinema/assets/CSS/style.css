@@ -316,6 +316,16 @@ input[type="text"] {
   margin-bottom: 15px;
 }
 
+.mobile-thumbnail-web-hidden {
+  position: relative;
+}
+
+.web-text{
+  position: absolute;
+  bottom: 8%;
+  left: 8%;
+}
+
 @media screen and (max-width: 768px) {
   .text-spacing {
     margin-top: 5%;
