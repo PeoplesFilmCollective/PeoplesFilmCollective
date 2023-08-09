@@ -22,7 +22,14 @@ i::after {
 /* } */
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden!important;
+}
+
+@media  (max-width: 768px) {
+  body {
+    overflow-x: hidden!important;
+    width: 99.1vw;
+  }
 }
 
 /* Navbar */
@@ -107,7 +114,7 @@ body {
   .navbar-container {
     display: block;
     position: relative;
-    height: 12vh;
+    height: 15vh;
     z-index: 50;
   }
 
@@ -162,7 +169,7 @@ body {
   .navbar .menu-items {
     padding-top: 100px;
     background: #fff;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     width: 300px;
     transform: translate(-150%);
@@ -303,6 +310,10 @@ input[type="text"] {
   .label-heading {
     font-size: 18px;
   }
+  
+  footer textarea {
+    width: 100%;
+  }
 }
 
 .copyright {
@@ -382,11 +393,11 @@ span {
   background: #f2f2f2;
 }
 .wrapper i:first-child {
-  left: -22px;
+  left: -1vw;
   /* display: none; */
 }
 .wrapper i:last-child {
-  right: -22px;
+  right: -1vw;
 }
 .wrapper .carousel {
   font-size: 0px;
