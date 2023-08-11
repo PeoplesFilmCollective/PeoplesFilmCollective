@@ -11,7 +11,18 @@ const showHideIcons = () => {
     arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
 
+// arrowIcons.forEach(icon => {
+//     icon.addEventListener("click", () => {
+//         let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+//         // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+//         carousel.scrollLeft += (icon.id == "left" ? -firstImgWidth : firstImgWidth);
+//         setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+//     });
+// });
+
 arrowIcons.forEach(icon => {
+    icon.setPointerCapture
+    
     icon.addEventListener("click", () => {
         let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
         // if clicked icon is left, reduce width value from the carousel scroll left else add to it
@@ -63,12 +74,12 @@ const dragStop = () => {
     autoSlide();
 }
 
-carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("pointerdown", dragStart);
 carousel.addEventListener("touchstart", dragStart);
 
-document.addEventListener("mousemove", dragging);
+document.addEventListener("pointermove", dragging);
 carousel.addEventListener("touchmove", dragging);
 
-document.addEventListener("mouseup", dragStop);
+document.addEventListener("pointerup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
