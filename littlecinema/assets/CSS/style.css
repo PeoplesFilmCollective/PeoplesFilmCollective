@@ -257,11 +257,35 @@ input[type="text"] {
 .bg-img {
   background-image: url(../images/stock2.jpg);
   height: 100%;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 400px;
   padding-bottom: 400px;
+}
+
+.lc-header {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 2%;
+}
+
+.lc-desc {
+  color: white;
+  font-size: 18px;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+
+.related-articles {
+  margin-left: 11%;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  padding-top: 2%;
+  padding-bottom: 1%;
 }
 
 .related-articles-main-container {
@@ -320,7 +344,7 @@ input[type="text"] {
   position: relative;
 }
 
-.web-text{
+.web-text {
   position: absolute;
   bottom: 8%;
   left: 8%;
@@ -374,7 +398,6 @@ input[type="text"] {
   }
 }
 
-
 /* Pagination */
 .center {
   text-align: center;
@@ -383,6 +406,8 @@ input[type="text"] {
 
 .pagination {
   display: inline-block;
+  padding-top: 1%;
+  padding-bottom: 2%;
 }
 
 .pagination a {
@@ -390,18 +415,18 @@ input[type="text"] {
   float: left;
   padding: 8px 16px;
   text-decoration: none;
-  transition: background-color .5s;
-  border: 1px solid #DDD;
+  transition: background-color 0.5s;
+  border: 1px solid #ddd;
   margin: 0 4px;
   font-size: 20px;
 }
 
 .pagination a.active {
   background-color: red;
-  color: #FFFFFF;
+  color: #ffffff;
   border: 1px solid red;
 }
 
 .pagination a:hover:not(.active) {
-  background-color: #DDD;
+  background-color: #ddd;
 }
