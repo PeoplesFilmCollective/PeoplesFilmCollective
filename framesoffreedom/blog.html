@@ -1,30 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
-    <title>KOLKATA PEOPLE'S FILM FESTIVAL - Blog</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../../assets/Image/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+      integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/CSS/single-film-page.css" />
+    <title>Adh Chanani Raat</title>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-container container">
-          <input type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="">FILMS</a></li>
-            <li><a href="./blog.html" style="color: red;">BLOGS</a></li>
-            <li><a href="./gallery.html">GALLERY</a></li>
-            <li><a href="./schedule.html">SCHEDULE</a></li>
-            <li><a href="">SUBMIT</a></li>
-          </ul>
-          <h1 class="logo">Ourcinema</h1>
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="checkbox" />
+        <div
+          class="hamburger-lines"
+          onclick='document.getElementById("checkbox").checked = !document.getElementById("checkbox").checked'
+        >
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
         </div>
-      </nav>
-</body>
+        <ul class="menu-items">
+          <li><a href="./2023.html">HOME</a></li>
+          <li><a href="">FILMS</a></li>
+          <li><a href="./blog.html" style="color: red">BLOGS</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./schedule.html">SCHEDULE</a></li>
+        </ul>
+        <h1 class="logo">
+          <img
+            src="../../../assets/Image/pfc-logo-wp.png"
+            alt=""
+            class="logo-img"
+          />
+        </h1>
+      </div>
+    </nav>
+    <main>
+      <p style="font-size: 80px; color: red; margin-bottom: 10%; margin-top: 5%;">Coming soon</p>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div style="line-height: 1.6">
+        <form
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbyuSNRX24eMn7j0YcwkBkNk9kSE18-mNfSnySbIMXcqqk28N3NrHFli1IEuC8tvJTZEKw/exec"
+          name="pfc_contact"
+          target="hiddenIframe"
+        >
+          <p class="get-in-touch-text">GET IN TOUCH</p>
+          <label for="" class="label-heading">Name</label> <br />
+          <input type="text" class="form-input" /> <br />
+          <label for="" class="label-heading">Email</label> <br />
+          <input type="email" class="form-input" /> <br />
+          <label for="" class="label-heading">Subject</label> <br />
+          <input type="text" class="form-input" /> <br />
+          <label for="" class="label-heading">Message</label> <br />
+          <textarea rows="12" cols="42"></textarea>
+          <br />
+          <input type="submit" class="submit-button" />
+        </form>
+      </div>
+      <div class="line-horizontal"></div>
+      <div class="footer-subtext">
+        <div>
+          <p class="sub-header">CONTACT US</p>
+          <p class="sub-header-text">EMAIL - abc@gmail.com</p>
+          <p class="sub-header-text">PHONE - 700000000</p>
+        </div>
+        <br /><br />
+        <div>
+          <p class="sub-header">CONTACT WITH US</p>
+          <div>icons</div>
+          <br /><br />
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="./index.html" style="text-decoration: none; color: white"
+              >HOME &nbsp;|&nbsp;
+            </a>
+            <a
+              href="./notice-board.html"
+              style="text-decoration: none; color: white"
+              >NOTICE BOARD &nbsp;|&nbsp;
+            </a>
+            <a
+              href="./in-the-news.html"
+              style="text-decoration: none; color: white"
+              >IN THE NEWS
+            </a>
+          </div>
+          <div class="footer-links">
+            <a
+              href="./publications.html"
+              style="text-decoration: none; color: white"
+              >PUBLICATIONS &nbsp;|&nbsp;
+            </a>
+            <a
+              href="./support-us.html"
+              style="text-decoration: none; color: white"
+              >SUPPORT US &nbsp;|&nbsp;
+            </a>
+            <a
+              href="./location.html"
+              style="text-decoration: none; color: white"
+              >LOCATION</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="copyright">© Copyright - People's Film Collective</p>
+    <!-- Footer -->
+    <iframe
+      name="hiddenIframe"
+      width="0"
+      height="0"
+      style="display: none"
+    ></iframe>
+  </body>
+  <script src="../../assets/JS/single-page.js"></script>
+  <!-- <script src='../../assets/JS/submit.js'></script> -->
 </html>
