@@ -1,4 +1,31 @@
-<!DOCTYPE html>
+#!/bin/python
+
+import pandas as pd
+import os
+
+csvfile = pd.read_csv('./films/raws/FOF_Film_Data.csv', sep='\t', delimiter=None, on_bad_lines='skip')
+csvfile.fillna('', inplace=True)
+row_limit, col_limit = csvfile.shape
+cwd = os.getcwd()
+
+year_pivot = csvfile.pivot_table(index = ['FOF'], aggfunc ='size') # 5-6
+
+for i in range(1,row_limit):
+
+  fof_year = str(int(csvfile["FOF"].values[i]))
+  directory_path = cwd + '/' + fof_year
+  print(directory_path)
+  if not os.path.exists(directory_path):
+    os.makedirs(directory_path)
+
+  file_name = str(csvfile["MOVIE_NAME"].values[i]).lower().replace(' ', '-')
+  img_dir = cwd + '/' + fof_year + '/images/' + file_name
+  if not os.path.exists(img_dir):
+    os.makedirs(img_dir)
+  print(file_name)
+  # html_file = open(str(cwd + '/' + fof_year + '/' + file_name + '.html'), 'w+')
+
+  file_contents = '''<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +33,7 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="./assets/CSS/style.css" />
     <link rel="icon" type="image/x-icon" href="../assets/Image/favicon.png" />
-    <title>Frames of Freedom - 2023</title>
+    <title>Frames of Freedom - ''' + fof_year + '''</title>
   </head>
   <body>
     <nav class="navbar">
@@ -18,7 +45,7 @@
           <span class="line line3"></span>
         </div>
         <ul class="menu-items">
-          <li><a href="./2023.html" style="color: red">HOME</a></li>
+          <li><a href="./index.html" style="color: red">HOME</a></li>
           <li><a href="">FILMS</a></li>
           <li><a href="./blog.html">BLOGS</a></li>
           <li><a href="./gallery.html">GALLERY</a></li>
@@ -86,7 +113,7 @@
       </section>
       <div class="year-about">
         <p style="font-size: xx-large; text-align: center">
-          5th FRAMES OF FREEDOM
+          FRAMES OF FREEDOM ''' + fof_year + '''
         </p>
         <br />
         <div class="fof-sub-texts">
@@ -369,32 +396,8 @@
         <div class="footer-subtext footer-one">
           <div>
             <p class="sub-header">CONTACT US</p>
-            <p class="sub-header-text">EMAIL - <a href='mailto:peoplesfilmcollective@gmail.com' style="text-decoration: none; color: white;">peoplesfilmcollective@gmail.com</a></p>
-            <p class="sub-header-text">PHONE - <a href='tel:+919163736863' style="text-decoration: none; color: white;">+91 91637 36863</a></p>
-          </div>
-          <br /><br />
-          <div>
-            <p class="sub-header">CONTACT WITH US</p>
-                      <div class="footer-icons">
-            <!-- Add the social media icons here -->
-            <a
-              href="https://www.facebook.com/KolkataPeoplesFilmFestival/"
-              target="_blank" style="text-decoration: none;"
-            >
-              <i class="fa fa-facebook" style="color: white;"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/peoplesfilmcollective/"
-              target="_blank" style="text-decoration: none;"
-            >
-              <i class="fa fa-instagram" style="color: white;"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/@PeoplesFilmCollectiveKolkata"
-              target="_blank" style="text-decoration: none;"
-            >
-              <i class="fa fa-youtube" style="color: white;"></i>
-            </a>
+            <p class="sub-header-text">EMAIL - <a href='mailto:peoplesfilmcollective@gmail.com'>peoplesfilmcollective@gmail.com</a></p>
+            <p class="sub-header-text">PHONE - <a href='tel:+919163736863'>+91 91637 36863</a></p>
           </div>
         </div>
       </div>
@@ -441,3 +444,8 @@
     <script src="./assets/JS/script.js"></script>
   </body>
 </html>
+  
+  '''
+
+  html_file.write(file_contents)
+  html_file.close()
