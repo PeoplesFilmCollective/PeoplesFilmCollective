@@ -287,6 +287,11 @@ textarea {
   height: 500px;
 }
 
+.footer-icons {
+  word-spacing: 12px;
+  margin-top: 2%;
+}
+
 @media (max-width: 768px) {
   .copyright {
     background-color: #000;
