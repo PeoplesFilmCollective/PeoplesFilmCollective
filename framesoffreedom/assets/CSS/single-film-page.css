@@ -402,7 +402,7 @@ span {
 }
 
 .text-justify {
-  text-align: justify !important;
+  text-align: center !important;
 }
 
 .heading {
