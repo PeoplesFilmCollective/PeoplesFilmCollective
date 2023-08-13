@@ -391,6 +391,11 @@ span {
   font-weight: 500;
 }
 
+.black {
+  color: unset;
+  font-weight: inherit;
+}
+
 .other-information {
   margin-left: 11%;
   margin-right: 11%;
