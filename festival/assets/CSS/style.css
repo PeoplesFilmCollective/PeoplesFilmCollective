@@ -402,7 +402,8 @@ input[type="text"] {
   }
 
   .year-font {
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 600;
   }
 
   .fof-sub-texts {
