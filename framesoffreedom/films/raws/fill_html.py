@@ -141,15 +141,15 @@ for i in range(1,row_limit):
             <br />
             <p class="heading">PERSONNEL</p>
             <br />
-  ''' + (("<p><span>Cinematographer</span> <span class='black' id='cinematographer'>" + str(csvfile["CINEMATOGRAPHER"].values[i]) + "</span></p>") if csvfile["CINEMATOGRAPHER"].values[i] != '' else '') + '''
-  ''' + (("<p><span>Editor</span> <span class='black' id='editor'>" + str(csvfile["EDITOR"].values[i]) + "</span></p>") if csvfile["EDITOR"].values[i] != '' else '') + '''
-  ''' + (("<p><span>Production Designer</span> <span class='black' id='prod_design'>" + str(csvfile["PRODUCTION DESIGN"].values[i]) + "</span></p>") if csvfile["PRODUCTION DESIGN"].values[i] != '' else '') + '''
-  ''' + (("<p><span>Sound Designer</span> <span class='black' id='sound_design'>" + str(csvfile["SOUND"].values[i]) + "</span></p>") if  csvfile["SOUND"].values[i] != '' else '') + '''
-  ''' + (("<p><span>Sound Mixing and additional design</span> <span class='black' id='sound_mixing'>" + "</span></p>") if False else '') + '''
-  ''' + (("<p><span>Background Score</span> <span class='black' id='bg_score'>" + "</span></p>") if False else '') + '''
-  ''' + (("<p><span>Colorist</span> <span class='black' id='colorist'>" + str(csvfile["COLORIST"].values[i]) + "</span></p>") if  csvfile["COLORIST"].values[i] != '' else '') + '''
-  ''' + (("<p><span>Producer(s)</span> <span class='black' id='producer'>" + str(csvfile["PRODUCER"].values[i]) + "</span></p>") if  csvfile["PRODUCER"].values[i] != '' else '') + '''
-           </div>
+            <p><span>Cinematographer</span> <span class='black' id='cinematographer'>''' + str(csvfile["CINEMATOGRAPHER"].values[i]) + '''</span></p>
+            <p><span>Editor</span> <span class='black' id='editor'>''' + str(csvfile["EDITOR"].values[i]) + '''</span></p>
+            <p><span>Production Designer</span> <span class='black' id='prod_design'>''' + str(csvfile["PRODUCTION DESIGN"].values[i]) + '''</span></p>
+            <p><span>Sound Designer</span> <span class='black' id='sound_design'>''' + str(csvfile["SOUND"].values[i]) + '''</span></p>
+            <p><span>Sound Mixing and additional design</span> <span class='black' id='sound_mixing'></span></p>
+            <p><span>Background Score</span> <span class='black' id='bg_score'></span></p>
+            <p><span>Colorist</span> <span class='black' id='colorist'>''' + str(csvfile["COLORIST"].values[i]) + '''</span></p>
+            <p><span>Producer(s)</span> <span class='black' id='producer'>''' + str(csvfile["PRODUCER"].values[i]) + '''</span></p>
+          </div>
         </div>
         <br /><br /><br />
       </main>
@@ -172,20 +172,40 @@ for i in range(1,row_limit):
             <label for="" class="label-heading">Message</label> <br />
             <textarea rows="12" cols="42"></textarea>
             <br />
-            <input type="submit" class="submit-button" />
+            <input type="submit" value="Send" class="submit-button" />
           </form>
         </div>
         <div class="line-horizontal"></div>
         <div class="footer-subtext">
           <div>
             <p class="sub-header">CONTACT US</p>
-            <p class="sub-header-text">EMAIL - <a href='mailto:peoplesfilmcollective@gmail.com' style="text-decoration: none; color: white;">peoplesfilmcollective@gmail.com</a></p>
-            <p class="sub-header-text">PHONE - <a href='tel:+919163736863' style="text-decoration: none; color: white;">+91 91637 36863</a></p>
+            <p class="sub-header-text">EMAIL - <a href='mailto:peoplesfilmcollective@gmail.com'>peoplesfilmcollective@gmail.com</a></p>
+            <p class="sub-header-text">PHONE - <a href='tel:+919163736863'>+91 91637 36863</a></p>
           </div>
           <br /><br />
           <div>
             <p class="sub-header">CONTACT WITH US</p>
-            <div>icons</div>
+                      <div class="footer-icons">
+            <!-- Add the social media icons here -->
+            <a
+              href="https://www.facebook.com/KolkataPeoplesFilmFestival/"
+              target="_blank" style="text-decoration: none;"
+            >
+              <i class="fa fa-facebook" style="color: white;"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/peoplesfilmcollective/"
+              target="_blank" style="text-decoration: none;"
+            >
+              <i class="fa fa-instagram" style="color: white;"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@PeoplesFilmCollectiveKolkata"
+              target="_blank" style="text-decoration: none;"
+            >
+              <i class="fa fa-youtube" style="color: white;"></i>
+            </a>
+          </div>
             <br /><br />
           </div>
           <div>
