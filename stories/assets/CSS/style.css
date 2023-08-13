@@ -263,7 +263,10 @@ input[type="text"] {
   background-size: cover;
   padding-top: 400px;
   padding-bottom: 400px;
+  position: relative;
 }
+
+
 
 .lc-header {
   color: white;
@@ -291,6 +294,7 @@ input[type="text"] {
 .related-articles-main-container {
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 3%;
 }
 
 .content {
