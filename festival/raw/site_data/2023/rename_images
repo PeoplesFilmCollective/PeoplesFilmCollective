@@ -1,0 +1,14 @@
+#!/bin/bash
+
+IFS=$'\n'
+for i in $( ls )
+do
+	k=1
+	for j in $( ls $i )
+	do
+		if [[ $j != 'poster.webp' ]]
+			then mv "$i/$j" $i/still_$k.webp
+		fi
+		k=$(($k + 1))
+	done
+done

@@ -1,0 +1,16 @@
+#!/bin/python
+
+import requests
+from bs4 import BeautifulSoup
+
+with open('2023', 'r') as f:
+	while True:
+		url = f.readline()
+		if url == 0:
+			break
+		page = requests.get(url)
+
+		soup = BeautifulSoup(page.content, "html.parser")
+		
+		soup.find_all("div", class_="films-details-wrap")
+		print(page)
